@@ -1,8 +1,7 @@
 import React from 'react'
-import Image from 'next/image'
 const Footer = () => {
   return (
-    <div className='flex justify-center my-16'>
+    <div className='flex justify-center'>
       <div className='grid grid-cols-3 gap-7'>
         <a
           href='https://discordapp.com'
