@@ -8,6 +8,7 @@ const Footer = () => {
           href='https://discordapp.com'
           target='_blank'
           rel='noopener noreferrer'
+          className='flex items-center'
         >
           <svg
             width='30'
@@ -23,7 +24,12 @@ const Footer = () => {
           </svg>
         </a>
 
-        <a href='https://opensea.io/' target='_blank' rel='noopener noreferrer'>
+        <a
+          href='https://opensea.io/'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='flex items-center'
+        >
           <svg
             width='30'
             height='30'
@@ -37,7 +43,12 @@ const Footer = () => {
             />
           </svg>
         </a>
-        <a href='https://twitter.com' target='_blank' rel='noopener noreferrer'>
+        <a
+          href='https://twitter.com'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='flex items-center'
+        >
           <svg
             width='28'
             height='23'
