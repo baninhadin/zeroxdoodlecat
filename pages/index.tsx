@@ -1,7 +1,9 @@
-import Link from 'next/link'
 import Image from 'next/image'
 import Card from '@/components/Card'
 import Footer from '@/components/Footer'
+import Background from '@/public/images/Background.png'
+import BackgroundMobile from '@/public/images/BackgroundMobile.png'
+
 const IndexPage = () => (
   <>
     <div
@@ -11,19 +13,23 @@ const IndexPage = () => (
       <div className='hidden sm:flex'>
         <Image
           alt='Background'
-          src='/images/Background.png'
+          src={Background}
+          placeholder='blur'
           layout='fill'
           objectFit='cover'
           quality={100}
+          priority
         />
       </div>
       <div className='flex sm:hidden'>
         <Image
           alt='Background Mobile'
-          src='/images/BackgroundMobile.png'
+          src={BackgroundMobile}
+          placeholder='blur'
           layout='fill'
           objectFit='cover'
           quality={100}
+          priority
         />
       </div>
     </div>
