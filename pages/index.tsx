@@ -16,7 +16,7 @@ const IndexPage = () => (
           src={Background}
           placeholder='blur'
           layout='fill'
-          objectFit='cover'
+          // objectFit='cover'
           quality={100}
           priority
         />
@@ -27,18 +27,18 @@ const IndexPage = () => (
           src={BackgroundMobile}
           placeholder='blur'
           layout='fill'
-          objectFit='cover'
+          // objectFit='cover'
           quality={100}
           priority
         />
       </div>
     </div>
-    <div className='h-full w-full'>
-      <div className='flex justify-center items-center content-center max-w-screen-lg min-h-screen m-auto pt-40 md:pt-20 p-5'>
+    <div className='min-h-screen'>
+      <div className='flex justify-center items-center max-w-screen-lg m-auto pt-40 md:pt-20'>
         <Card />
       </div>
+      <Footer />
     </div>
-    <Footer />
   </>
 )
 
