@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Card from '@/components/Card'
+import Footer from '@/components/Footer'
 const IndexPage = () => (
   <>
     <div
@@ -31,6 +32,7 @@ const IndexPage = () => (
         <Card />
       </div>
     </div>
+    <Footer />
   </>
 )
 
