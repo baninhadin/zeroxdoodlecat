@@ -3,6 +3,7 @@ import Card from '@/components/Card'
 import Footer from '@/components/Footer'
 import Background from '@/public/images/Background.png'
 import BackgroundMobile from '@/public/images/BackgroundMobile.png'
+import BackgroundXL from '@/public/images/BackgroundXL.png'
 
 const IndexPage = () => (
   <>
@@ -10,23 +11,34 @@ const IndexPage = () => (
       className='fixed h-screen w-screen overflow-hidden'
       style={{ zIndex: -1 }}
     >
-      <div className='hidden sm:flex'>
+      <div className='hidden xl:flex'>
+        <Image
+          alt='Background XL'
+          src={BackgroundXL}
+          placeholder='blur'
+          layout='fill'
+          objectFit='cover'
+          quality={100}
+          priority
+        />
+      </div>
+      <div className='hidden sm:flex xl:hidden'>
         <Image
           alt='Background'
           src={Background}
           placeholder='blur'
           layout='fill'
-          // objectFit='cover'
+          objectFit='cover'
           quality={100}
           priority
         />
       </div>
-      <div className='flex sm:hidden'>
+      <div className='block sm:hidden'>
         <Image
           alt='Background Mobile'
           src={BackgroundMobile}
           placeholder='blur'
-          layout='fill'
+          layout='responsive'
           // objectFit='cover'
           quality={100}
           priority
@@ -34,7 +46,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div className='min-h-screen'>
-      <div className='flex justify-center items-center max-w-screen-lg m-auto pt-40 md:pt-20'>
+      <div className='flex justify-center items-center max-w-screen-lg m-auto pt-40 md:pt-30'>
         <Card />
       </div>
       <Footer />
