@@ -1,7 +1,7 @@
 import React from 'react'
 const Footer = () => {
   return (
-    <div className='flex justify-center'>
+    <div className='flex justify-center pt-4 pb-12'>
       <div className='grid grid-cols-3 gap-7'>
         <a
           href='https://discordapp.com'
