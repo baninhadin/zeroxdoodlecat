@@ -15,7 +15,7 @@ const CardDetails = () => {
         style={{ border: '1px solid #D3D3D3' }}
       >
         <p>NFT Minted</p>
-        <p>0000/4444</p>
+        <p>0000/6666</p>
       </div>
       <div
         className='flex justify-between items-center rounded-lg px-4 text-xs h-14'
