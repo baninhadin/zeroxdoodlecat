@@ -46,7 +46,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div className='min-h-screen'>
-      <div className='flex justify-center items-center max-w-screen-lg m-auto pt-40 md:pt-30'>
+      <div className='flex justify-center items-center max-w-screen-lg m-auto pt-40 md:pt-30 px-5'>
         <Card />
       </div>
       <Footer />
